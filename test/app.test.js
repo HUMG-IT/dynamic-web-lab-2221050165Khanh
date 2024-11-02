@@ -36,7 +36,7 @@ describe('Kiểm thử POST /api/v1/bmi', () => {
   it('tính chỉ số BMI và trả về phân loại "Bình thường" cho cân nặng 60kg và chiều cao 165cm', async () => {
     const res = await request(app)
       .post('/api/v1/bmi')
-      .send({ weight: 60, height: 165 });
+      .send({ weight: 60, height: 1.65 });
     expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty('bmi');
     expect(res.body).toHaveProperty('classification', 'Bình thường');

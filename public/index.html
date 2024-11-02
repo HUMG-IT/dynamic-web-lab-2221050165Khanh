@@ -23,6 +23,19 @@
     </section>
 
     <!-- Form Tính BMI -->
+    <section>
+        <h2>Tính chỉ số BMI</h2>
+        <form id="bmiForm" onsubmit="calculateBMI(event)">
+            <label for="height">Chiều cao (m):</label>
+            <input type="number" id="height" step="0.01" required>
+    
+            <label for="weight">Cân nặng (kg):</label>
+            <input type="number" id="weight" required>
+    
+            <button type="submit">Tính BMI</button>
+        </form>
+        <p id="bmiResult"></p>
+    </section>
     <!-- TODO: Tạo một section mới với tiêu đề "Tính chỉ số BMI" -->
     <!-- TODO: Tạo form với id là "bmiForm" -->
     <!-- TODO: Thêm input cho chiều cao -->
